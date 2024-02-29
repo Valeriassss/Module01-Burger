@@ -26,6 +26,10 @@ body {
  /* Header */
 
  .header {
+   border-bottom: 1px solid #dedede;
+ }
+
+ .header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px;
@@ -45,7 +49,7 @@ body {
  .nav {
   flex-grow: 1;
   display: flex;
-  gap: 46px;
+  gap: 47px;
  }
 .nav-link {
    color: var(--dark);
@@ -144,6 +148,8 @@ font-family: var(--nunito-sans);
 font-size: 79px;
 font-weight: 700;
 text-transform: capitalize;
+margin-top: 20px;
+margin-bottom: 18px;
 }
 .hero-description {
    max-width: 320px;
@@ -151,4 +157,22 @@ text-transform: capitalize;
    color: rgba(var( --light-rgb), .8);
    font-size: 15px;
    line-height: 160%;
+}
+
+/* Banner */
+
+.banner {
+ margin-top: 140px;
+ background-image: url(../images/banner.svg);
+}
+
+.banner-wrapper {
+   background-color:#ccc ;
+   padding: 100px;
+   
+}
+
+.banner-title span {
+display: block;
+
 }
