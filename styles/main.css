@@ -7,6 +7,7 @@
    --dark: #443737;
    --light: #ffffff;
    --light-rgb: 255, 255, 255;
+   --line: #dedede;
 }
 body { 
     font-family: var(--open-sans)
@@ -26,7 +27,7 @@ body {
  /* Header */
 
  .header {
-   border-bottom: 1px solid #dedede;
+   border-bottom: 1px solid var(--line);
  }
 
  .header-wrapper {
@@ -235,9 +236,28 @@ margin-bottom: 34px;
 }
 
 .menu-title {
+   color: var(--dark);
+   font-family: var(--nunito-sans);
+   font-size: 44px;
+   font-weight: 700;
+   line-height: 127%;
+   text-transform: uppercase;
    margin-top: 0;
    margin-bottom: 0;
 
+}
+.menu-select {
+   color:var(--dark);
+   font-size: 15px;
+   appearance: none;
+   flex-basis: 279px;
+   background-image: url(../images/arrow.svg);
+   background-size: 14px 10px;
+   background-repeat: no-repeat;
+   background-position: 89% center;
+   border: 1px solid var(--line);
+   padding: 13px 30px;
+   border-radius: 22px;
 }
 .menu-box {
    display: grid;
@@ -246,11 +266,16 @@ margin-bottom: 34px;
    gap: 50px 20px ;
 
 }
+.menu-item {
+   font-family: var(--nunito-sans);
+   text-align: center;
+}
 .menu-thumb {
 width: 100%;
 height: 430px;
 position: relative;
 overflow: hidden;
+margin-bottom: 20px;
 
 }
 .menu-thumb img {
@@ -262,4 +287,42 @@ top: 50%;
 transform: translate(-50%, -50%);
 object-fit: cover;
 
+}
+.menu-name {
+   color: var(--dark);
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 126%;
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+.menu-price {
+   color: rgba (var (--dark-rgba), .5);
+   font-size: 20px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 20px;
+}
+.menu-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   margin: 0 auto;
+   font-size: 14px;
+   font-family: var(--nunito-sans);
+   font-weight: 700;
+   padding: 11px 32px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #1e2f40;
+   background-color: var(--accent-light);
+   border: none;
+   border-radius: 5px;
+}
+.menu-btn::before {
+   content: '';
+   display: block;
+   width: 18px;
+   
 }
