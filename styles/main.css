@@ -205,6 +205,14 @@ margin-bottom: 18px;
    padding: 100px;
    background-image: url(../images/banner.svg);
 }
+.banner-box {
+background-repeat: no-repeat;
+background-size: cover;
+   background-position: 0 center;
+   padding: 100px 100px 120px;
+   margin-bottom: 80;
+   
+}
 .banner-title {
    color: var(--light);
    font-family: var(--nunito-sans);
@@ -531,4 +539,33 @@ object-fit: cover;
 
 .contact-tel:hover {
    color: var(--accent-light);
+}
+/* Responsive */
+@media (max-widht: 1000px) {
+  .container {
+   min-width: 738px;
+  }
+  .header-logo {
+   width: 150px ;
+   height: 48px;
+   background-size: contain;
+  }
+  .header-nav {
+   gap: 22px;  
+  }
+  .header-item {
+   flex-basis: 75.5%;
+  }
+  .bg {
+   margin-bottom: 72px;
+  }
+  .banner-box {
+
+   background-position: 0 center;
+   padding: 100px 40px 120px;
+}
+.menu-grid {
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 50px 15px;
+}
 }
